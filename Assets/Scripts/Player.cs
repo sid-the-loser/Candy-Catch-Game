@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public static float[] boundaries = new float[2] { -6.66f, 6.66f }; 
-    [SerializeField] int speed = 10;
+    [SerializeField] int speed = 20;
 
-    int score;
+    [SerializeField] int score;
 
     float candyTimer = 0;
+
+    Text scoreboard;
 
     Vector3 move_dir;
 
@@ -18,6 +21,7 @@ public class Player : MonoBehaviour
     {
         InputManager.Init(this);
         CandySpawning.Init();
+        scoreboard = GameObject.FindGameObjectWithTag("Scoreboard").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -41,6 +45,15 @@ public class Player : MonoBehaviour
             candyTimer = 0;
             CandySpawning.Spawn();
         }
+
+        if (CandySpawning.spawnCounter >= 15)
+        {
+            scoreboard.text = $"Game Ended!, Score: {score}";
+        }
+        else
+        {
+            scoreboard.text = $"Score: {score}";
+        }
     }
 
     public void SetMovementDir(Vector2 direction)
@@ -52,4 +65,5 @@ public class Player : MonoBehaviour
     {
         score += amount;
     }
+
 }

@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CandySpawning
 {
     static GameObject[] candyObj;
 
-    static int spawnCounter;
+    public static int spawnCounter;
 
     public static void Init()
     {
         candyObj = GameObject.FindGameObjectsWithTag("Candy");
+        foreach (GameObject item in candyObj)
+        {
+            item.SetActive(false);
+        }
     }
 
     public static void Spawn()
@@ -35,4 +40,5 @@ public class CandySpawning
     {
         candy.SetActive(false);
     }
+
 }

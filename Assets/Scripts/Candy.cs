@@ -8,6 +8,9 @@ public class Candy : MonoBehaviour
 {
 
     [SerializeField] int score;
+    [SerializeField] int speed = 5;
+
+    Vector3 mov_dir = new Vector3 (0, -1, 0);
     // Start is called before the first frame update
     void Start()
     {
@@ -18,14 +21,20 @@ public class Candy : MonoBehaviour
     void Update()
     {
 
+        transform.position += mov_dir * speed * Time.deltaTime;
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             other.GetComponent<Player>().AddScore(score);
-            CandySpawning.DisableCandy(this.gameObject);
-        }    
+            CandySpawning.DisableCandy(gameObject);
+        }
+        else
+        {
+            Debug.Log("What?");
+        }
     }
 }

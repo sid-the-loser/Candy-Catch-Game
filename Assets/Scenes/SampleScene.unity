@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 285924051}
   - component: {fileID: 285924050}
-  - component: {fileID: 285924049}
   - component: {fileID: 285924048}
+  - component: {fileID: 285924052}
   m_Layer: 0
   m_Name: Candy (5)
   m_TagString: Candy
@@ -154,34 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab14ee5751d0c4d41898079251d0ff3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
---- !u!50 &285924049
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285924047}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  score: 5
+  speed: 5
 --- !u!212 &285924050
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -220,8 +194,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1758081647
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b40f2020687238549a5898c52056d3cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -249,6 +223,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &285924052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285924047}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.92, y: 1.41, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,8 +448,8 @@ GameObject:
   m_Component:
   - component: {fileID: 664129864}
   - component: {fileID: 664129863}
-  - component: {fileID: 664129862}
   - component: {fileID: 664129861}
+  - component: {fileID: 664129865}
   m_Layer: 0
   m_Name: Candy (2)
   m_TagString: Candy
@@ -474,34 +469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab14ee5751d0c4d41898079251d0ff3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
---- !u!50 &664129862
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 664129860}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  score: 2
+  speed: 5
 --- !u!212 &664129863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -540,8 +509,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1758081647
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 850a700c1c167714b8b591f0a65cc2f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -569,6 +538,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &664129865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664129860}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.76, y: 1.33, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1019049082
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,8 +653,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1130553718}
   - component: {fileID: 1130553717}
-  - component: {fileID: 1130553716}
   - component: {fileID: 1130553715}
+  - component: {fileID: 1130553719}
   m_Layer: 0
   m_Name: Candy (6)
   m_TagString: Candy
@@ -684,34 +674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab14ee5751d0c4d41898079251d0ff3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
---- !u!50 &1130553716
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130553714}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  score: 6
+  speed: 5
 --- !u!212 &1130553717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -750,8 +714,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1758081647
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 746111a842aed9f4593d0aff6e92cacf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -779,6 +743,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1130553719
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130553714}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.92, y: 1.41, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1388274384
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,8 +921,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1512609625}
   - component: {fileID: 1512609624}
-  - component: {fileID: 1512609623}
   - component: {fileID: 1512609622}
+  - component: {fileID: 1512609626}
   m_Layer: 0
   m_Name: Candy (4)
   m_TagString: Candy
@@ -957,34 +942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab14ee5751d0c4d41898079251d0ff3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
---- !u!50 &1512609623
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512609621}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  score: 4
+  speed: 5
 --- !u!212 &1512609624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1023,8 +982,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1758081647
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0326bf370c4dead4684c2c3f58344af6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1052,6 +1011,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1512609626
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512609621}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.44, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1611574235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,8 +1042,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1611574239}
   - component: {fileID: 1611574238}
-  - component: {fileID: 1611574237}
   - component: {fileID: 1611574236}
+  - component: {fileID: 1611574240}
   m_Layer: 0
   m_Name: Candy (1)
   m_TagString: Candy
@@ -1083,34 +1063,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab14ee5751d0c4d41898079251d0ff3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
---- !u!50 &1611574237
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611574235}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  score: 1
+  speed: 5
 --- !u!212 &1611574238
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1149,8 +1103,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1758081647
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3a5708098214a184cbdcca493251a4c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1178,6 +1132,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1611574240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611574235}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.03, y: 1.43, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1687859891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1164,7 @@ GameObject:
   - component: {fileID: 1687859893}
   - component: {fileID: 1687859892}
   - component: {fileID: 1687859894}
+  - component: {fileID: 1687859895}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Player
@@ -1275,10 +1251,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70ec416cb3ac5642901cc03d32754bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundaries:
-  - -6.66
-  - 6.66
   speed: 10
+  score: 0
+--- !u!65 &1687859895
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687859891}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.62, y: 2.22, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1932056354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,8 +1284,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1932056358}
   - component: {fileID: 1932056357}
-  - component: {fileID: 1932056356}
   - component: {fileID: 1932056355}
+  - component: {fileID: 1932056359}
   m_Layer: 0
   m_Name: Candy (3)
   m_TagString: Candy
@@ -1310,34 +1305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab14ee5751d0c4d41898079251d0ff3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
---- !u!50 &1932056356
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1932056354}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  score: 3
+  speed: 5
 --- !u!212 &1932056357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1376,8 +1345,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1758081647
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f00d0ae8aff3643478cbb0531c00b87b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1405,6 +1374,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1932056359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932056354}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.87, y: 1.43, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
