@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour
     float candyTimer = 0;
 
     Text scoreboard;
+    GameObject resetButton;
 
     Vector3 move_dir;
 
@@ -22,6 +24,8 @@ public class Player : MonoBehaviour
         InputManager.Init(this);
         CandySpawning.Init();
         scoreboard = GameObject.FindGameObjectWithTag("Scoreboard").GetComponent<Text>();
+        resetButton = GameObject.FindGameObjectWithTag("Reset");
+        resetButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,7 +52,25 @@ public class Player : MonoBehaviour
 
         if (CandySpawning.spawnCounter >= 15)
         {
-            scoreboard.text = $"Game Ended!, Score: {score}";
+            scoreboard.text = $"Game Ended!, Score: {score}\n";
+            if (score > 20)
+            {
+                scoreboard.text += "Candy Craze!!";
+            }
+            else if (score > 10)
+            {
+                scoreboard.text += "Halloween!!";
+            }
+            else if (score > 6)
+            {
+                scoreboard.text += "Sugar rush!!";
+            }
+            else
+            {
+                scoreboard.text += "Sadness!!";
+            }
+
+            resetButton.SetActive(true);
         }
         else
         {
@@ -64,6 +86,11 @@ public class Player : MonoBehaviour
     public void AddScore(int amount)
     {
         score += amount;
+    }
+
+    public void ResetScene()
+    {
+        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);    
     }
 
 }

@@ -11,6 +11,7 @@ public class CandySpawning
 
     public static void Init()
     {
+        spawnCounter = 0;
         candyObj = GameObject.FindGameObjectsWithTag("Candy");
         foreach (GameObject item in candyObj)
         {
