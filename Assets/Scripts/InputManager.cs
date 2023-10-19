@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputManager : MonoBehaviour
+public class InputManager
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    static Controls _controls;
 
-    // Update is called once per frame
-    void Update()
+    public static void Init(Player _player)
     {
-        
+        _controls = new Controls();
+
+        _controls.Ingame.Enable();
+
+        _controls.Ingame.LeftRight.performed += LR => { _player.SetMovementDir(LR.ReadValue<Vector2>()); };
     }
 }

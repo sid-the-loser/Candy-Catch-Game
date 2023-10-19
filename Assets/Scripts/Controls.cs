@@ -29,9 +29,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""LeftRight"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""86f3236a-79af-4af1-bcd1-59a71949d4af"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -39,26 +39,59 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": """",
-                    ""id"": ""9d5f7d41-2ff0-4a40-8c70-5212e85259b4"",
-                    ""path"": ""<Keyboard>/#(A)"",
+                    ""name"": ""2D Vector"",
+                    ""id"": ""7500eff8-2b8f-4ada-aaa4-17f12f168030"",
+                    ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""LeftRight"",
-                    ""isComposite"": false,
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""d49b0e72-fa9c-4b7e-afb5-4336a58471fd"",
-                    ""path"": ""<Keyboard>/#(D)"",
+                    ""name"": ""up"",
+                    ""id"": ""48153e82-6249-4adb-abd9-a04803ae6d66"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""LeftRight"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""aad6ad36-6c4d-4da3-b5ed-6e16d031bf18"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""fe7223c5-625e-4316-8aa3-d9242057d720"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""3d9d9d6a-8f72-4477-be79-a20f41e7a224"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
